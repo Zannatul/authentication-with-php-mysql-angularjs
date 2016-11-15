@@ -1,0 +1,19 @@
+<div>
+    <p ng-click="getData()">get data</p>
+    <table class="table table-bordered">
+        <tr>
+            <td>ID</td>
+            <td>Country Name</td>
+            <td>Country Code</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        <tr ng-repeat="aa in data">
+            <td>{{aa.id}}</td>
+            <td><img src="{{aa.country_name}}" ></td>
+            <td>{{aa.country_code}}</td>
+            <td><button ng-click="edit(aa.id)">Edit</button></td>
+            <td><button ng-click="delete(aa.id)">Delete</button></td>
+        </tr>
+    </table>
+</div>
